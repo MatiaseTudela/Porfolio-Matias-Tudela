@@ -289,7 +289,34 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.wsp{
+    position: fixed;
 
+    bottom: 30px;
+    right: 30px;
+}
+.wsp:hover{
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+.info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 500px;   
+    margin-bottom: 12px; 
+   }
+
+    
+   .wsp:hover .info{
+    display: block;
+    }
 
 /* footer */
 
