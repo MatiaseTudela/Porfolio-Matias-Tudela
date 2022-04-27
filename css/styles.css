@@ -311,19 +311,25 @@ input[type=submit]:hover {
 
 .wsp{
     position: fixed;
-
+    height: -1%;
     bottom: 30px;
-    right: 30px;
+    right: 5px;
+    
+}
+.wsp  a img{
+    height: 70%;
+    width: 70%;
+    object-fit: contain;
 }
 .wsp:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: transform .5s;
 }
 .info {
     display: none;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 21px;
     z-index: -1;
     background: rgba(0, 0, 0, 0.5);
     width: 350px;
