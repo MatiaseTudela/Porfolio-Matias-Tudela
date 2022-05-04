@@ -7,15 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matias Tudela Porfolio</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+
 </head>
 
 <body>
-    <header>
+    
 
-        <nav class="nav-mio">
+        <!-- <nav class="nav-mio">
             <img class="logo" src="img/clientes/lorem-lorem-1.svg" alt="logo">
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
@@ -25,11 +28,51 @@
             
                 </ul>
            <a href="contacto.html" class="cta"><button>Contacto</button></a>
-        </nav>
+        </nav> -->
+        <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                  <img src="img/clientes/lorem-lorem-1.svg" width="130" height="130" alt="">
+                </a>
+                
+                <!-- enlaces -->
+                <div class="collapse navbar-collapse" id="opciones">   
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link mi-a" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="quiensoy.html">Quien Soy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="template.html">Ejemplos</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>         
+                  </ul>
+                  
+                </div>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar . . ." aria-label="Search">
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                  </form>
+              </nav>
+        </div>
+       
         <section class="textos-header">
             <h1>Potencia tus ventas al menos un 200%</h1>
             <h2>Con una página web potente</h2>
-            
+
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -38,49 +81,52 @@
             </svg></div>
     </header>
 
-        <section class="clientes contenedor">
-            <h2 class="titulo">Que dicen nuestros clientes</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/clientes/lorem-lorem-1.svg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
+    <section class="clientes contenedor">
+        <h2 class="titulo">Que dicen nuestros clientes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/clientes/lorem-lorem-1.svg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
                 </div>
-                <div class="card">
-                    <img src="img/clientes/lorem-2.png" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name 2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
+            </div>
+            <div class="card">
+                <img src="img/clientes/lorem-2.png" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
                 </div>
-                
             </div>
 
-            <div class="cards">
-                <div class="card">
-                    <img src="img/clientes/lomer 3.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name 3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/clientes/lorem-4.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name 4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <div class="wsp">
-            <a href="https://wa.me/+5492644550345/?text=Hola Necesito Un presupuesto"><img src="/img/004-whatsapp.png" alt="What's App" height="90px"></a>
-            
-            <div> <h1 class="info">Hola Escribime</h1></div>
         </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="img/clientes/lomer 3.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/clientes/lorem-4.jpg" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Name 4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="wsp">
+        <a href="https://wa.me/+5492644550345/?text=Hola Necesito Un presupuesto"><img src="/img/004-whatsapp.png"
+                alt="What's App" height="90px"></a>
+
+        <div>
+            <h1 class="info">Hola Escribime</h1>
+        </div>
+    </div>
     </main>
     <footer>
         <div class="contenedor-footer">
@@ -99,14 +145,17 @@
         </div>
         <h2 class="titulo-final">&copy; Matias Tudela Design</h2>
         <div class="redes-sociales">
-        <a href="#" title="Facebook " ><img src="/img/001-facebook.png" alt="facebook iconos"> </a>
-        <a href="#" title="Intagram " ></a><img src="/img/002-instagram.png" alt="Intagram iconos"> </a>
-        <a href="#" title="Twitter " ></a><img src="/img/003-gorjeo.png" alt="Twitter iconos"> </a>
-        <a href="#" title="Linkedin " ><img src="/img/005-linkedin.png" alt="Linkedin iconos"> </a>
-    </div>
+            <a href="#" title="Facebook "><img src="/img/001-facebook.png" alt="facebook iconos"> </a>
+            <a href="#" title="Intagram "></a><img src="/img/002-instagram.png" alt="Intagram iconos"> </a>
+            <a href="#" title="Twitter "></a><img src="/img/003-gorjeo.png" alt="Twitter iconos"> </a>
+            <a href="#" title="Linkedin "><img src="/img/005-linkedin.png" alt="Linkedin iconos"> </a>
+        </div>
 
-        
+
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 </body>
 
 </html>
