@@ -1,6 +1,6 @@
 $color-violeta-oscuro: #642a73;
 $color-violeta-claro: #bc4e9c;
-$color-Blanco: $color-Blanco;
+$color-Blanco: #fff;
 * {
 	margin: 0;
 	padding: 0;
@@ -25,7 +25,7 @@ body {
 	text-align: center;
 	margin-bottom: 60px;
 }
-header {
+@mixin header-color {
 	width: 100%;
 	height: 450px;
 	background: $color-violeta-claro;
@@ -34,6 +34,9 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
+}
+header {
+	@include header-color;
 	.textos-header {
 		display: flex;
 		height: 430px;
@@ -44,14 +47,7 @@ header {
 	}
 }
 .foto-deslis {
-	width: 100%;
-	height: 450px;
-	background: $color-violeta-claro;
-	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo.jpg);
-	background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
+	@include header-color;
 }
 .navbar-dark {
 	.navbar-nav {
