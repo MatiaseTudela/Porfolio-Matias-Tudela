@@ -1,6 +1,8 @@
 $color-violeta-oscuro: #642a73;
 $color-violeta-claro: #bc4e9c;
 $color-Blanco: #fff;
+$fw-md: 700;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -25,16 +27,18 @@ body {
 	text-align: center;
 	margin-bottom: 60px;
 }
+/* Creando @MIXIN */
 @mixin header-color {
 	width: 100%;
 	height: 450px;
 	background: $color-violeta-claro;
-	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo.jpg);
-	background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo.jpg);
+	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo1.jpg);
+	background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 }
+/* Implementando @MIXIN */
 header {
 	@include header-color;
 	.textos-header {
@@ -46,8 +50,49 @@ header {
 		text-align: center;
 	}
 }
+/* Implementando @MIXIN */
 .foto-deslis {
 	@include header-color;
+
+}
+.title-my-skill{
+	margin-top: 5.5rem;
+	margin-bottom: 1rem;
+	font-size: 5rem;
+	text-align: center;
+	font-weight: $fw-md;
+	color: $color-Blanco;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 70%;
+	
+}
+.flex-items:nth-child() {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+	padding-left: 10px;
+  }
+
+.skills__name{
+	text-align: center;
+	color: $color-Blanco;
 }
 .navbar-dark {
 	.navbar-nav {
@@ -112,9 +157,10 @@ header {
 }
 .imagen-quien-soy {
 	flex: auto;
-	width: 50%;
+	/* width: 50%; */
 	height: 100%;
-	text-align: center;
+	text-align:center
+	
 }
 .circulo {
 	width: 50vh;
@@ -232,35 +278,28 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+/* Declaro  @Extend */
+.color-text{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+/* Aplico @Extend */
 input[type=text] {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+@extend .color-text;
 }
+/* Aplico  @Extend */
 select {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+	@extend .color-text;
 }
+/* Aplico  @Extend */
 textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+	@extend .color-text;
 }
 input[type=submit] {
 	background-color: $color-violeta-oscuro;

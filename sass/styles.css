@@ -28,12 +28,14 @@ body {
   margin-bottom: 60px;
 }
 
+/* Creando @MIXIN */
+/* Implementando @MIXIN */
 header {
   width: 100%;
   height: 450px;
   background: #bc4e9c;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 6, 87, 0.459)), to(rgba(188, 78, 156, 0.664))), url(../img/codigo.jpg);
-  background: linear-gradient(to right, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../img/codigo.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 6, 87, 0.459)), to(rgba(188, 78, 156, 0.664))), url(../img/codigo1.jpg);
+  background: linear-gradient(to right, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../img/codigo1.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -55,15 +57,75 @@ header .textos-header {
   text-align: center;
 }
 
+/* Implementando @MIXIN */
 .foto-deslis {
   width: 100%;
   height: 450px;
   background: #bc4e9c;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 6, 87, 0.459)), to(rgba(188, 78, 156, 0.664))), url(../img/codigo.jpg);
-  background: linear-gradient(to right, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../img/codigo.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(249, 6, 87, 0.459)), to(rgba(188, 78, 156, 0.664))), url(../img/codigo1.jpg);
+  background: linear-gradient(to right, rgba(249, 6, 87, 0.459), rgba(188, 78, 156, 0.664)), url(../img/codigo1.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+}
+
+.title-my-skill {
+  margin-top: 5.5rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 70%;
+}
+
+.flex-items:nth-child {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  padding-left: 10px;
+}
+
+.skills__name {
+  text-align: center;
+  color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -138,7 +200,7 @@ header .textos-header {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
-  width: 50%;
+  /* width: 50%; */
   height: 100%;
   text-align: center;
 }
@@ -310,7 +372,8 @@ header .textos-header {
           align-items: center;
 }
 
-input[type=text] {
+/* Declaro  @Extend */
+.color-text, input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -322,30 +385,9 @@ input[type=text] {
   resize: vertical;
 }
 
-select {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
+/* Aplico @Extend */
+/* Aplico  @Extend */
+/* Aplico  @Extend */
 input[type=submit] {
   background-color: #642a73;
   color: white;
