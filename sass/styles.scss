@@ -2,6 +2,11 @@ $color-violeta-oscuro: #642a73;
 $color-violeta-claro: #bc4e9c;
 $color-Blanco: #fff;
 $fw-md: 700;
+$paletavioleta:(
+violeta-hla-1: hsla(317, 45%, 52%, 0.664),
+violeta-hla-2: hsla(340, 95%, 50%, 0.459),
+violeta-rgba-1: rgba(247, 9, 247, 0.603)
+);
 
 * {
 	margin: 0;
@@ -28,15 +33,25 @@ body {
 	margin-bottom: 60px;
 }
 /* Creando @MIXIN */
+// APLICANDO MAPAS
 @mixin header-color {
 	width: 100%;
 	height: 450px;
 	background: $color-violeta-claro;
-	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo1.jpg);
-	background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/codigo1.jpg);
+	background: -webkit-linear-gradient(to right, map-get($paletavioleta, violeta-hla-2), map-get($paletavioleta, violeta-hla-21)), url(../img/codigo1.jpg);
+	background: linear-gradient(to right, map-get($paletavioleta, violeta-hla-2), map-get($paletavioleta, violeta-hla-1)), url(../img/codigo1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
+}
+@mixin skill-child {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+	
 }
 /* Implementando @MIXIN */
 header {
@@ -80,15 +95,53 @@ header {
 	height: 70%;
 	
 }
-.flex-items:nth-child() {
-	display: block;
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: auto;
-	align-self: auto;
-	order: 0;
-	padding-left: 10px;
-  }
+// aplico MIXIN y  Bucle FOR
+@for $i from 1 through 10 {
+	.flex-items:nth-child(#{$i}){
+		@include skill-child()
+	}
+}
+
+// .flex-items:nth-child(1) {
+// @include skill-child()
+
+//   }
+//   .flex-items:nth-child(2) {
+// 	@include skill-child()
+	
+// 	  }
+// 	  .flex-items:nth-child(3) {
+// 		@include skill-child()
+		
+// 		  }
+// 		  .flex-items:nth-child(4) {
+// 			@include skill-child()
+			
+// 			  }
+// 			  .flex-items:nth-child(5) {
+// 				@include skill-child()
+				
+// 				  }
+// 				  .flex-items:nth-child(6) {
+// 					@include skill-child()
+					
+// 					  }
+// 					  .flex-items:nth-child(7) {
+// 						@include skill-child()
+						
+// 						  }
+// 						  .flex-items:nth-child(8) {
+// 							@include skill-child()
+							
+// 							  }
+// 							  .flex-items:nth-child(9) {
+// 								@include skill-child()
+								
+// 								  }
+// 								  .flex-items:nth-child(10) {
+// 									@include skill-child()
+									
+// 									  }
 
 .skills__name{
 	text-align: center;
@@ -166,7 +219,7 @@ header {
 	width: 50vh;
 	height: 50vh;
 	border-radius: 500px;
-	box-shadow: 0 0 10px 0 rgba(247, 9, 247, 0.603);
+	box-shadow: 0 0 10px 0 map-get($paletavioleta, violeta-rgba-1);
 }
 .portafolio {
 	background: #f2f2f2;
@@ -201,7 +254,7 @@ header {
 	height: 100%;
 	top: 0;
 	transform: scale(0);
-	background: hsla(273,91%,27%, 0.7);
+	background: map-get($paletavioleta, violeta-hla-2);
 	transition: transform .5s;
 	display: flex;
 	justify-content: center;
@@ -231,7 +284,7 @@ header {
 			transform: scale(1.1);
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			font-size: large;
-			box-shadow: 0 0 20px 0 rgba(247, 9, 247, 0.603);
+			box-shadow: 0 0 20px 0 map-get($paletavioleta, violeta-hla-1);
 		}
 		img {
 			width: 100px;
