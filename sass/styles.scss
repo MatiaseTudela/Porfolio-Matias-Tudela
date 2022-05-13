@@ -1,3 +1,6 @@
+@import "_grid.scss";
+@import "_nav.scss";
+
 $color-violeta-oscuro: #642a73;
 $color-violeta-claro: #bc4e9c;
 $color-Blanco: #fff;
@@ -68,7 +71,24 @@ header {
 /* Implementando @MIXIN */
 .foto-deslis {
 	@include header-color;
+	text-align:center;
+	color: $color-Blanco;
 
+}
+.letras-transparentre{
+	
+position: relative;
+top: 40%;
+
+
+}
+
+.letra-t{
+background-color: black;
+font-size: 100px;
+text-align: center;
+mix-blend-mode: multiply;
+border-radius: 75px;
 }
 .title-my-skill{
 	margin-top: 5.5rem;
@@ -247,6 +267,9 @@ header {
 			transform: scale(1);
 		}
 	}
+}
+.img-card{
+	max-width: 50%;
 }
 .hover-galeria {
 	position: absolute;
