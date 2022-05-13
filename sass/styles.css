@@ -1,3 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Monserrat:500");
+.main {
+  color: gainsboro;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 50px 1fr 100px 200px;
+  grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-section my-section my-section" "my-aside my-aside my-aside" "my-footer my-footer my-footer";
+}
+
+.header {
+  grid-area: my-header;
+  background-color: blueviolet;
+}
+
+.nav {
+  grid-area: my-nav;
+  background-color: cornflowerblue;
+}
+
+.aside {
+  grid-area: my-aside;
+  background-color: darkmagenta;
+}
+
+.section {
+  grid-area: my-section;
+  background-color: indigo;
+}
+
+.footer {
+  grid-area: my-footer;
+  background-color: darkorchid;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 100px 1fr 100px;
+    grid-template-areas: "my-header my-header my-header" "my-nav my-nav my-nav" "my-aside my-section my-section" "my-footer my-footer my-footer";
+  }
+}
+@media (min-width: 1001px) {
+  .main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-areas: "my-header my-header my-header" "my-nav my-section my-aside" "my-footer my-footer my-footer";
+  }
+}
+.nav-mio {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+li a button {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  padding: 9px 25px;
+  background-color: #edf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #bc4e9c;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #edf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #bc4e9c;
+}
+
+button:hover {
+  box-shadow: 5px 5px 5px 10px #bc4e9c;
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +168,21 @@ header .textos-header {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.letras-transparentre {
+  position: relative;
+  top: 40%;
+}
+
+.letra-t {
+  background-color: black;
+  font-size: 100px;
+  text-align: center;
+  mix-blend-mode: multiply;
+  border-radius: 75px;
 }
 
 .title-my-skill {
@@ -283,6 +410,10 @@ header .textos-header {
 }
 .imagen-port:hover .hover-galeria {
   transform: scale(1);
+}
+
+.img-card {
+  max-width: 50%;
 }
 
 .hover-galeria {
