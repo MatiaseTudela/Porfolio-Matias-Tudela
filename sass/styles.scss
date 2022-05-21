@@ -1,5 +1,6 @@
 @import "_grid.scss";
 @import "_nav.scss";
+@import "_efecto-cv.scss";
 
 $color-violeta-oscuro: #642a73;
 $color-violeta-claro: #bc4e9c;
@@ -60,12 +61,21 @@ body {
 header {
 	@include header-color;
 	.textos-header {
+		font-family: 'Roboto Mono', monospace;
 		display: flex;
-		height: 430px;
-		width: 100%;
 		align-items: center;
 		flex-direction: column;
 		text-align: center;
+
+		h1 {
+			font-size: 50px;
+			color: $color-Blanco; 
+		}
+		h2 {
+			font-size: 30px;
+			font-weight: 300;
+			color: $color-Blanco;
+		}
 	}
 }
 /* Implementando @MIXIN */
@@ -122,47 +132,6 @@ border-radius: 75px;
 	}
 }
 
-// .flex-items:nth-child(1) {
-// @include skill-child()
-
-//   }
-//   .flex-items:nth-child(2) {
-// 	@include skill-child()
-	
-// 	  }
-// 	  .flex-items:nth-child(3) {
-// 		@include skill-child()
-		
-// 		  }
-// 		  .flex-items:nth-child(4) {
-// 			@include skill-child()
-			
-// 			  }
-// 			  .flex-items:nth-child(5) {
-// 				@include skill-child()
-				
-// 				  }
-// 				  .flex-items:nth-child(6) {
-// 					@include skill-child()
-					
-// 					  }
-// 					  .flex-items:nth-child(7) {
-// 						@include skill-child()
-						
-// 						  }
-// 						  .flex-items:nth-child(8) {
-// 							@include skill-child()
-							
-// 							  }
-// 							  .flex-items:nth-child(9) {
-// 								@include skill-child()
-								
-// 								  }
-// 								  .flex-items:nth-child(10) {
-// 									@include skill-child()
-									
-// 									  }
-
 .skills__name{
 	text-align: center;
 	color: $color-Blanco;
@@ -199,17 +168,7 @@ border-radius: 75px;
 	transform: translatex(-50%);
 	position: relative;
 }
-.textos-header {
-	h1 {
-		font-size: 50px;
-		color: $color-Blanco;
-	}
-	h2 {
-		font-size: 30px;
-		font-weight: 300;
-		color: $color-Blanco;
-	}
-}
+
 .wave {
 	position: absolute;
 	bottom: 0;
@@ -230,7 +189,6 @@ border-radius: 75px;
 }
 .imagen-quien-soy {
 	flex: auto;
-	/* width: 50%; */
 	height: 100%;
 	text-align:center
 	
@@ -323,18 +281,7 @@ border-radius: 75px;
 		}
 	}
 }
-/*  Our team */
-/* Style inputs with type="text", select elements and textareas */
-/* Style the submit button with a specific background color etc */
-/* When moving the mouse over the submit button, add a darker green color */
-/* Add a background color and some padding around the form */
-/* footer */
-/* Galeria */
-/* Clientes */
-/* ABOUT US */
-/* Galeria */
-/* Clients */
-/* Footer */
+
 .cards {
 	.card {
 		>.contenido-texto-card {
@@ -565,4 +512,15 @@ footer {
 	.titulo-final {
 		font-size: 20px;
 	}
+}
+/**
+ * ----------------------------------------
+ * animation y Curriculum
+ * ----------------------------------------
+ */
+ .preview-area {
+    -webkit-transition: background 0.5s 0s ease;
+    -moz-transition: background 0.5s 0s ease;
+    -o-transition: background 0.5s 0s ease;
+    transition: background 0.5s 0s ease;
 }
