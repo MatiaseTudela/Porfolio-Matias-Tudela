@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Monserrat:500");
 .main {
   color: gainsboro;
   text-align: center;
@@ -452,7 +451,6 @@ header .textos-header h2 {
 }
 .navbar-dark .navbar-toggler-icon {
   color: #fff !important;
-  background-image: url(/img/icono1.png) !important;
 }
 
 .container-fluid {
