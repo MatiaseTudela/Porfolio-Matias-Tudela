@@ -227,7 +227,7 @@ border-radius: 75px;
 	}
 }
 .img-card{
-	max-width: 50%;
+	max-width: 100%;
 }
 .hover-galeria {
 	position: absolute;
@@ -419,6 +419,20 @@ footer {
 	}
 }
 @media screen and (max-width:900px) {
+
+	 .header-color {
+
+		height: 300px;
+
+	}
+	.letra-t{
+		background-color: black;
+font-size: 50px;
+
+mix-blend-mode: multiply;
+border-radius: 75px;
+
+	}
 	.form-inline {
 		display: none;
 	}
@@ -454,6 +468,14 @@ footer {
 	}
 }
 @media screen and (max-width:500px) {
+	 .foto-deslis {
+
+		height: 300px;
+		.letra-t{
+			text-align: start;
+		}
+
+	}
 	nav {
 		text-align: center;
 		padding: 30px 0 0 0;
