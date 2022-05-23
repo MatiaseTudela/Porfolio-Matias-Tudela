@@ -303,7 +303,7 @@ border-radius: 75px;
 }
 /* Declaro  @Extend */
 .color-text{
-	width: 100%;
+	width: 300%;
 	padding: 12px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -419,6 +419,9 @@ footer {
 	}
 }
 @media screen and (max-width:900px) {
+	.color-text{
+		width: 100%;
+	}
 
 	 .header-color {
 
