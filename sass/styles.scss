@@ -68,11 +68,11 @@ header {
 		text-align: center;
 
 		h1 {
-			font-size: 50px;
+			font-size: calc(2em + 2vw);
 			color: $color-Blanco; 
 		}
 		h2 {
-			font-size: 30px;
+			font-size: calc(1em + 1vw);
 			font-weight: 300;
 			color: $color-Blanco;
 		}
