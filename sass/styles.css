@@ -607,7 +607,7 @@ header .textos-header h2 {
 
 /* Declaro  @Extend */
 .color-text, textarea, select, input[type=text] {
-  width: 100%;
+  width: 300%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -723,6 +723,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .color-text, input[type=text], select, textarea {
+    width: 100%;
+  }
+
   .header-color {
     height: 300px;
   }
