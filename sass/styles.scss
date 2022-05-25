@@ -419,6 +419,8 @@ footer {
 	}
 }
 @media screen and (max-width:900px) {
+
+
 	.color-text{
 		width: 100%;
 	}
@@ -475,17 +477,23 @@ border-radius: 75px;
 
 		height: 300px;
 		.letra-t{
-			text-align: start;
+			text-align: center;
+			
 		}
 
 	}
 	nav {
 		text-align: center;
-		padding: 30px 0 0 0;
+		padding: 3px 0 0 0;
 		>a {
 			margin-right: 5px;
 		}
 	}
+	.nav-link{
+		padding: 0.4rem 1rem;
+		
+	}
+	
 	.textos-header {
 		h1 {
 			font-size: 35px;
