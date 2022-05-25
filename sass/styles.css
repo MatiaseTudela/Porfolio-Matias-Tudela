@@ -775,6 +775,10 @@ footer {
     text-align: center;
   }
 
+  .height-quien-soy {
+    height: 550px;
+  }
+
   nav {
     text-align: center;
     padding: 3px 0 0 0;
