@@ -126,7 +126,7 @@ border-radius: 75px;
 	
 }
 // aplico MIXIN y  Bucle FOR
-@for $i from 1 through 10 {
+@for $i from 1 through 8 {
 	.flex-items:nth-child(#{$i}){
 		@include skill-child()
 	}
@@ -420,7 +420,14 @@ footer {
 }
 @media screen and (max-width:900px) {
 
+	.wrapper{
+		padding: 0;
+	}
 
+	.title-my-skill{
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
 	.color-text{
 		width: 100%;
 	}

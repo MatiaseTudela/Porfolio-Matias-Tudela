@@ -412,24 +412,6 @@ header .textos-header h2 {
   order: 0;
 }
 
-.flex-items:nth-child(9) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-
-.flex-items:nth-child(10) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-}
-
 .skills__name {
   text-align: center;
   color: #fff;
@@ -723,6 +705,15 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .title-my-skill {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
   .color-text, input[type=text], select, textarea {
     width: 100%;
   }
