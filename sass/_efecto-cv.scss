@@ -76,7 +76,11 @@
       }
     }
   }
-
+  @media screen and (max-width:900px) {
+    .content {
+      top: 61%;
+    }
+  }
   @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
     50% {opacity:1;}

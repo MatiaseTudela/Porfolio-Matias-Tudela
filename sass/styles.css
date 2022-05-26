@@ -176,6 +176,11 @@ button:hover {
   margin: 0;
 }
 
+@media screen and (max-width: 900px) {
+  .content {
+    top: 61%;
+  }
+}
 @-webkit-keyframes opacity {
   0%, 100% {
     opacity: 0;
@@ -705,6 +710,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .navbar-collapse {
+    z-index: 1;
+  }
+
   .wrapper {
     padding: 0;
   }

@@ -420,6 +420,10 @@ footer {
 }
 @media screen and (max-width:900px) {
 
+	.navbar-collapse{
+		z-index: 1;
+	}
+
 	.wrapper{
 		padding: 0;
 	}
