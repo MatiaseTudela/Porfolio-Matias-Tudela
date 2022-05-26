@@ -791,11 +791,11 @@ footer {
     padding: 0.4rem 1rem;
   }
 
-  .textos-header h1 {
+  header .textos-header h1 {
     font-size: 35px;
   }
-  .textos-header h2 {
-    font-size: 20px;
+  header .textos-header h2 {
+    font-size: calc(0.8em + 1vw);
   }
 
   .imagen-about-us {
