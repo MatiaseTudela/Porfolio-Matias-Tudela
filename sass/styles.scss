@@ -504,15 +504,16 @@ border-radius: 75px;
 		padding: 0.4rem 1rem;
 		
 	}
-	
+	header{
 	.textos-header {
 		h1 {
 			font-size: 35px;
 		}
 		h2 {
-			font-size: 20px;
+			font-size: calc(0.8em + 1vw);
 		}
 	}
+}
 	.imagen-about-us {
 		margin-bottom: 60px;
 		width: 99%;
